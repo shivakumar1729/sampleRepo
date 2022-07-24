@@ -1,0 +1,145 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    /* margin: 60px 100px; */
+    height:20vh;
+    width:100vw;
+    justify-items: center;
+    margin:80px 20px 0px 20px;
+}
+
+.list-item {
+    font-family: "Orbitron";
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    
+}
+
+nav .list {
+    flex:2;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content:space-around;
+    list-style-type: none;
+    width:750px;
+    margin: 20px 100px 0px 100px;
+    /* background-color: aqua; */
+}
+li:first-child {
+    text-decoration:underline;
+    font-weight: 800;
+    font-size: 30px;
+    order:1;
+}
+li:first-child+li {
+    order: 3;
+}
+li:nth-child(3n) {
+    order:2;
+}
+li:nth-child(4n){
+    order:4;
+}
+li:nth-child(5n){
+    order:5;
+}
+
+nav>div>img {
+    flex:1;
+    display: flex;
+    justify-content: flex-start;
+    margin:5px 90px;
+    /* width:300px; */
+    /* background-color: red; */
+}
+
+
+.button-group{
+    display: flex;
+    flex:initial;
+    flex-direction: row;
+    justify-items:flex-end;
+    /* width: 300px; */
+    padding: 0 10px;
+    margin-left: 80px;
+    /* margin-right: -50px; */
+}
+.search-icon {
+    align-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+/* nav>div {
+    display: block;
+} */
+.nav-button {
+    /* background-color: #e03b8b; */
+    border:3px solid #1f1f1f;
+    padding: 5px 50px;
+    border-radius: 12px;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    color: #242B2E;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+}
+
+.square {
+    /* align-content: flex-end; */
+    order:2;
+    position: absolute;
+    left: 300px;
+    bottom: 40px;
+}
+
+.globe {
+    order: 3;
+    position: absolute;
+    left: 1000px;
+    top: 220px;
+    align-content: center;
+    /* bottom: 40px; */
+}
+
+.star {
+    justify-content: flex-end;
+    order:4;
+    position: absolute;
+    right: 210px;
+    align-content: center;
+}
+.globe+div {
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    bottom: 100px;
+    /* top: 0px; */
+    order:1;
+    height: 400px;
+    
+
+    /* margin-left: -460px;
+    margin-bottom: ; */
+}
+
+.globe+div>img {
+    /* height: 580px; */
+    width: 520px;
+    bottom:50px;
+}
+
+
+.hero-container-right {
+    display: flex;
+    flex-direction: column;
+    order:6;
+}
